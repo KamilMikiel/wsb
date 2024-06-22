@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Moje CV</title>
+</head>
+<body>
+
+    <header>
+<img src="https://kosmetykaaut.pl/uploads/imageproxy/5daa9af73ff4bc99f3be0c726fb9ad74.jpg.9e1fba25e6e3a63adf8d1150d835994f.jpg">
+        <h1>Janusz Kowalski</h1>
+        <p>Stanowisko: Posel</p>
+<br>
+<br>
+
+        <h2 class="tak">Kontakt</h2>
+        <p>Email: example@example.com</p>
+        <p>Telefon: 997</p>
+        <p>Adres: ul. Przykładowa 123, 00-000 Warka</p>
+    <br>
+<br>
+<br>
+<br>
+
+ <h2 class="tak">Zaintersowania</h2>
+<ul>
+            <li>Picie piwa</li>
+            <li>Ogldanie TV</li>
+        </ul>
+    </header>
+	
+<div class="prawa">
+    
+
+    <section class="wyksztalcenie">
+        <h2>Wykształcenie</h2>
+        <h3>Nazwa uczelni</h3>
+        <p>Stopień naukowy / Kierunek | Data rozpoczęcia - Data zakończenia</p>
+	<div class="clock">
+    <span class="hand seconds animate"></span>
+    <span class="hand minutes animate"></span>
+    <span class="hand hours animate"></span>
+  </div>
+    </section>
+
+    <section class="doswiadczenie">
+        <h2>Doświadczenie zawodowe</h2>
+        <h3>Szlachta nie pracuje</h3>
+        <p>Szlachcic | cale zycie</p>
+        <ul>
+            <li>Picie piwa</li>
+            <li>Degutator alkocholu</li>
+        </ul>
+	
+    </section>
+
+    <section class="umiejetnosci">
+        <h2>Umiejętności</h2>
+        <ul>
+            <li>Pwiko</li>
+            <li>Lenisctwo</li>
+            <li>Motoryzacja</li>
+        </ul>
+    </section>
+    <section class="kontakt">
+        <h2>Jezyk</h2>
+        <p>Ojczyscty Polski</p>
+        <p>Angieslki podstawowy</p>
+       
+    </section>
+</div>
+    <footer>
+        <p>&copy; 2023 Janusz Kowalski. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+<script type="text/javascript">
+var secondsHand = document.querySelector('.seconds'),
+    minutesHand = document.querySelector('.minutes'),
+    hoursHand = document.querySelector('.hours'),
+    now = new Date();
+
+var setupClock = function () {
+  var secs = now.getSeconds(),
+      mins = now.getMinutes() * 60,
+      hours = now.getHours() * 3600;
+  
+  secondsHand.style.animationDelay = '-' + secs + 's';
+  minutesHand.style.animationDelay = '-' + mins + 's';
+  hoursHand.style.animationDelay = '-' + hours + 's';
+}
+
+setupClock();
+</script>
+</body>
+</html>
